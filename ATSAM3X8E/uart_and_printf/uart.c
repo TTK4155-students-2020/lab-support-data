@@ -1,7 +1,7 @@
 /*
  * uart.c
  *
- * Author: Gustav O. Often and Eivind H. Jølsgard
+ * Author: Gustav O. Often and Eivind H. Jï¿½lsgard
  *
  * For use in TTK4155 Embedded and Industrial Computer Systems Design
  * NTNU - Norwegian University of Science and Technology
@@ -142,7 +142,6 @@ void UART_Handler(void)
 		}
 		rx_buffer.data[rx_buffer.tail] = UART->UART_RHR;
 		rx_buffer.tail = (rx_buffer.tail + 1) % UART_RINGBUFFER_SIZE;
-		
 	}
 	
 	
